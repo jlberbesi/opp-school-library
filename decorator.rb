@@ -1,9 +1,7 @@
-require_relative 'nameable'
-
 class Decorator < Nameable
   attr_accessor :nameable
 
-  def initialize(nameable)
+  def initialize(nameable) # rubocop:disable Lint/MissingSuper
     @nameable = nameable
   end
 
