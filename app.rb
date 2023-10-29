@@ -49,10 +49,7 @@ class App
       print 'Has parent permission? [Y/N]: '
       permission = gets.chomp.downcase == 'y'
 
-      print 'Classroom: '
-      classroom = gets.chomp
-
-      student = Student.new(name, age.to_i, permission, Classroom.new(classroom))
+      student = Student.new(name, age.to_i, permission)
       @people << student
 
       puts 'Student created successfully!'
